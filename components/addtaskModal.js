@@ -11,7 +11,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 
 
 
-const AddTaskModal = () => {
+export default function AddTaskModal() {
 
     
     const [open, setOpen] =useState(false);
@@ -103,4 +103,3 @@ const AddTaskModal = () => {
   )
 }
 
-export default AddTaskModal

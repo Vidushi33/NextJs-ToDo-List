@@ -10,7 +10,7 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 
 
-export default function UpdateTask  ({id, title, description}){
+export default  function UpdateTask  ({id, title, description}){
   console.log(id)
   console.log(title)
 
