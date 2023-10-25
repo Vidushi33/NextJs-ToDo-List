@@ -33,7 +33,7 @@
             </div>
       
             <div className='mt-12 float-right flex'>
-             <UpdateTask id={task._id} />
+             <UpdateTask id={task._id} title={task.title} description={task.description} />
               <DeleteTask id={task._id} />
             </div>
             </div>
