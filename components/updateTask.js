@@ -35,7 +35,7 @@ export default  function UpdateTask  ({id, title, description}){
     }
     else{
       try{
-        const res = await fetch("http://localhost:3000/api/task", {
+        const res = await fetch(`http://localhost:3000/api/task?id=${id}`, {
           method:"PUT",
           headers:{
             "Content-type" : "application/json",
@@ -52,7 +52,7 @@ export default  function UpdateTask  ({id, title, description}){
 
      
   handleClose()
-  // window.location.reload()
+  window.location.reload()
   setNewTitle('')
   setNewDesc('')
     }
