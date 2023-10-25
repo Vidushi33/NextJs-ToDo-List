@@ -1,4 +1,4 @@
-"use client"
+
 
 export async function getTasks(){
     try{
