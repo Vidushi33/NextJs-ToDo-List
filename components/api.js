@@ -1,6 +1,8 @@
+"use client"
+
 export async function getTasks(){
     try{
-        const res = await fetch('http://localhost:3000/api/task',{
+        const res = await fetch( `${process.env.URL}/api/task`,{
             cache:"no-store",
         })
 
