@@ -1,4 +1,4 @@
-
+"use client"
   
   import React from 'react'
   
@@ -11,6 +11,7 @@
 
 
   const Content = async() => {
+
 
     const tasks = await getTasks() 
     

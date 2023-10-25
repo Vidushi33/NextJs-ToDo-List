@@ -11,8 +11,8 @@ import DialogTitle from '@mui/material/DialogTitle';
 
 
 export default  function UpdateTask  ({id, title, description}){
-  console.log(id)
-  console.log(title)
+  // console.log(id)
+  // console.log(title)
 
   const [open, setOpen] =useState(false);
   const [newTitle, setNewTitle] = useState(title)
