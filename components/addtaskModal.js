@@ -8,7 +8,6 @@ import DialogContent from '@mui/material/DialogContent';
 
 import DialogTitle from '@mui/material/DialogTitle';
 
-const uri = process.env.URL
 
 
 export default function AddTaskModal() {
@@ -72,7 +71,7 @@ export default function AddTaskModal() {
           <TextField
           value={title}
           onChange={(e)=> setTitle(e.target.value)}
-            autoFocus
+            
             margin="dense"
             id="outlined-title"
             label="Enter the Title of the task"
@@ -86,7 +85,7 @@ export default function AddTaskModal() {
             onChange={(e)=>setDesc(e.target.value)}
             multiline
             rows={4}
-            autoFocus
+            
             margin="dense"
             id="outlined-description"
             label="Enter the Description of the Task"

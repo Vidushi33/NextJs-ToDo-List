@@ -2,27 +2,7 @@ import ConnectToMongoDb from "@/lib/mongodb";
 import Task from "@/models/task";
 import { NextResponse } from "next/server";
 
-// export default async (req, res) => {
-//     // Enable CORS headers
-//     res.setHeader('Access-Control-Allow-Credentials', 'true');
-//     res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000/api/task'); // Replace with your actual origin or origins
-//     res.setHeader('Access-Control-Allow-Methods', 'GET, DELETE, PATCH, POST, PUT');
-//     res.setHeader(
-//       'Access-Control-Allow-Headers',
-//       'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
-//     );
-  
-//     // Specific logic for the preflight request
-//     if (req.method === 'OPTIONS') {
-//       res.status(200).end();
-//       return;
-//     }
-  
-//     // Your API route logic here
-   
-//     res.status(200).json({ message: 'API response' });
-//   };
-  
+
 
 
 export async function POST(req){

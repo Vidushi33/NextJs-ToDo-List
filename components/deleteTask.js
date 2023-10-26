@@ -13,10 +13,10 @@ export default  function DeleteTask({id}){
             await fetch(`${uri}/api/task?id=${id}`,{
                     method:"DELETE"
                 })
-              
+                window.location.reload()
         }
 
-        window.location.reload()
+        
     }
 
     return(
