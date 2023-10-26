@@ -5,7 +5,7 @@ import { NextResponse } from "next/server";
 export default async (req, res) => {
     // Enable CORS headers
     res.setHeader('Access-Control-Allow-Credentials', 'true');
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000'); // Replace with your actual origin or origins
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000/api/task'); // Replace with your actual origin or origins
     res.setHeader('Access-Control-Allow-Methods', 'GET, DELETE, PATCH, POST, PUT');
     res.setHeader(
       'Access-Control-Allow-Headers',
@@ -19,8 +19,8 @@ export default async (req, res) => {
     }
   
     // Your API route logic here
-    const currentDate = new Date();
-    res.status(200).json({ timestamp: currentDate.getTime(), message: 'API response' });
+   
+    res.status(200).json({ message: 'API response' });
   };
   
 
