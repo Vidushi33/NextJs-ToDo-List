@@ -1,15 +1,7 @@
 import ConnectToMongoDb from "@/lib/mongodb";
 import Task from "@/models/task";
 import { NextResponse } from "next/server";
-import Cors from 'micro-cors';
 
-const cors = Cors({
-    allowedMethods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'], // Customize the allowed HTTP methods as needed.
-  });
-
-  export default cors((req, res) => {
-    res.status(200).json({ message: 'API response' });
-  });
 
 export async function POST(req){
     const {title, description} = await req.json()
