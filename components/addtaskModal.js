@@ -71,7 +71,7 @@ export default function AddTaskModal() {
           <TextField
           value={title}
           onChange={(e)=> setTitle(e.target.value)}
-            
+            autoFocus
             margin="dense"
             id="outlined-title"
             label="Enter the Title of the task"
