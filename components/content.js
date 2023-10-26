@@ -1,22 +1,38 @@
-
+"use client"
   
-  import React from 'react'
+  import React, {useState , useEffect} from 'react'
   
 
-  import { getTasks } from './api'
+  import { getTasks } from './api';
+  
 
   import DeleteTask from './deleteTask'
   import UpdateTask from './updateTask'
   
 
 
-  const Content = async() => {
+  const Content = () => {
+
+    const [tasks, setTasks] = useState([])
+
+    const getData = async() => {
+      const response = await getTasks()
+      console.log(response)
+      setTasks(response) 
+      
+    }
+
+    // console.log(process.env.URL,"uri")
 
 
-    const tasks = await getTasks() 
+    useEffect(()=> {
+      getData()
+    
+    },[])
+    
     
  
-  console.log(tasks)
+  // console.log(tasks)
 
     return (
       <>

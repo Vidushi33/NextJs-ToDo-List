@@ -8,7 +8,7 @@ import DialogContent from '@mui/material/DialogContent';
 
 import DialogTitle from '@mui/material/DialogTitle';
 
-
+const uri = process.env.URL
 
 
 export default function AddTaskModal() {
@@ -35,7 +35,7 @@ export default function AddTaskModal() {
         }
         else{
           try{
-            const res = await fetch("http://localhost:3000/api/task", {
+            const res = await fetch(`${uri}/api/task`, {
               method:"POST",
               headers:{
                 "Content-type" : "application/json",

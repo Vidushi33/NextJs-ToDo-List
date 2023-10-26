@@ -1,10 +1,15 @@
 
 
+const uri = process.env.URL
+// console.log(uri,"uri")
+
+
 export async function getTasks(){
     try{
-        const res = await fetch( 'http://localhost:3000/api/task',{
-            cache:"no-store",
+        const res = await fetch(`${uri}/api/task`, {
+            cache:'no-store'
         })
+            
 
         if(!res.ok)
         {
@@ -15,5 +20,6 @@ export async function getTasks(){
     } catch(error){
         console.log("Error Loading Data", error)
     }
+    // console.log(uri)
 }
 

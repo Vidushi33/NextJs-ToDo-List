@@ -9,6 +9,7 @@ import DialogContent from '@mui/material/DialogContent';
 
 import DialogTitle from '@mui/material/DialogTitle';
 
+const uri = process.env.URL
 
 export default  function UpdateTask  ({id, title, description}){
   // console.log(id)
@@ -35,7 +36,7 @@ export default  function UpdateTask  ({id, title, description}){
     }
     else{
       try{
-        const res = await fetch(`http://localhost:3000/api/task?id=${id}`, {
+        const res = await fetch(`${uri}/api/task?id=${id}`, {
           method:"PUT",
           headers:{
             "Content-type" : "application/json",

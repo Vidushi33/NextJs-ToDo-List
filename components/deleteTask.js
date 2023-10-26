@@ -3,12 +3,14 @@
 import React from 'react'
 import { HiOutlineTrash } from "react-icons/hi"
 
+const uri = process.env.URL
+
 export default  function DeleteTask({id}){
     // console.log(id)
     const removeTask = async() => {
         const confirmed = confirm("Are You Sure You Want to Delete ?")
         if(confirmed){
-            await fetch(`http://localhost:3000/api/task?id=${id}`,{
+            await fetch(`${uri}/api/task?id=${id}`,{
                     method:"DELETE"
                 })
               
