@@ -9,6 +9,7 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 
 
+const uri = process.env.URL
 
 export default function AddTaskModal() {
 
@@ -43,7 +44,7 @@ export default function AddTaskModal() {
               
             })
     
-            // console.log(res)
+            console.log(res)
             
         }catch(error){
           console.log(error)
