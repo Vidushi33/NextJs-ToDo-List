@@ -66,7 +66,7 @@ export default function UpdateTask({ id, title, description }) {
           <TextField
             value={newTitle}
             onChange={(e) => setNewTitle(e.target.value)}
-            autoFocus
+            
             margin="dense"
             id="outlined-title"
             label="Enter the Title of the task"
