@@ -79,7 +79,7 @@ export default function UpdateTask({ id, title, description }) {
             onChange={(e) => setNewDesc(e.target.value)}
             multiline
             rows={4}
-            autoFocus
+            
             margin="dense"
             id="outlined-description"
             label="Enter the Description of the Task"
