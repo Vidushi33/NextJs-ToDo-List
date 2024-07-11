@@ -15,5 +15,4 @@ export async function getTasks() {
   } catch (error) {
     console.log("Error Loading Data", error);
   }
-  // console.log(uri)
 }
